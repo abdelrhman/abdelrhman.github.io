@@ -128,7 +128,40 @@ h2~p {
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  height: 50vh;
+  height: 100vh;
+  padding-top: 10vh;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.hero-home{
+  background-image: url(/images/shark.jpg);
+  background-position: center top;
+}
+
+.hero-content {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  transform: translate(0, -50%);
+  text-transform: uppercase;
+}
+
+.hero-content h1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 7vw;
+  margin-bottom: 0.25em;
+}
+
+.hero-content .social-link {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #556c83;
+}
+
+.hero-content .social-link:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 /* SOCIAL STYLES */
