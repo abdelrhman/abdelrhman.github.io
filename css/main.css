@@ -13,8 +13,16 @@ h1 {
   margin-top: 0;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 a {
-  color: #f00;
+  color: #6397b5;
+}
+
+p {
+  line-height: 1.5;
 }
 
 h2~p {
@@ -53,7 +61,7 @@ h2~p {
   color: #fff;
 }
 
-.nav-links a{
+.nav-links a {
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
@@ -134,7 +142,20 @@ h2~p {
   background-size: cover;
 }
 
-.hero-home{
+.full-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, 0);
+  height: 0;
+  width: 0;
+  border: 10px solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.hero-home {
   background-image: url(/images/shark.jpg);
   background-position: center top;
 }
@@ -194,6 +215,34 @@ h2~p {
   margin: 0 0.5em;
 }
 
+/* HOMEPAGE STYLES */
+.home-section {
+  width: 90vh;
+  max-width: 980vh;
+  margin: 6rem auto;
+}
+
+.home-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.home-callout {
+  background-color: #000;
+  color: #fff;
+  padding: 7vh 0;
+}
+
+.callout-title {
+  font-size: 5.75vw;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.callout-copy {
+  font-size: 0.8rem;
+}
+
 /* BIO STYLES */
 .bio-wrapper {
   font-size: 24px;
@@ -203,14 +252,12 @@ h2~p {
 }
 
 .bio-box {
-  border: 1px solid black;
-  border-color: black black red;
   box-sizing: border-box;
   float: left;
   font-size: 1rem;
-  margin: 40px 1% 0;
-  padding: 0 2% 2%;
-  width: 23%;
+  margin: 6rem 0 0;
+  padding: 0 3%;
+  width: 33%;
 }
 
 .bio-box h3 {
@@ -218,6 +265,7 @@ h2~p {
   font-size: 1.5em;
   margin: -40px 0 1em;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .bio-box img {
@@ -226,14 +274,9 @@ h2~p {
 
 .bio-box .social-link {
   display: block;
-  margin: 2em 0 1em;
+  margin: 2em auto 1em;
 }
 
 .bio-copy {
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-.bio-copy a {
-  color: green;
+  font-size: 0.75em;
 }
